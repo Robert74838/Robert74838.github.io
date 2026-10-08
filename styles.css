@@ -55,6 +55,7 @@ a:hover, a:active {
 img {
      max-width: 100%;
      height: auto;
+     display: none;
 }
 figure {
     margin:0;
@@ -113,6 +114,9 @@ blockquote {
     width: 100%;
     box-sizing: border-box;
 }
+    img{
+        display: block;
+    }
 }
 @media screen and (min-width:60em) {
     .col-3 {
@@ -122,6 +126,9 @@ blockquote {
     .col-21 {
         grid-template-columns: 2fr 1fr;
         gap:2em
+    }
+    img{
+        display: block;
     }
 }
 @media screen and (min-width:80em) {
@@ -135,9 +142,15 @@ blockquote {
     header h1 {
         font-size: 6em;
     }
+    img{
+        display: block;
+    }
 }
 @media screen and (min-width:100em) {
     .container {
         max-width: 90em;
+    }
+    img{
+        display: block;
     }
 }
